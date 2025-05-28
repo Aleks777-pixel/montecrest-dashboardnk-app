@@ -1,0 +1,87 @@
+# Configuration des sources pour le prototype aéronautique
+
+news_sources:
+  - name: "Aviation Week"
+    url: "https://aviationweek.com/business-aviation"
+    article_selector: "div.article-content"
+    title_selector: "h2 a"
+    url_selector: "h2 a"
+    date_selector: "div.article-created-date"
+    summary_selector: "div.field-name-field-deck"
+    base_url: "https://aviationweek.com"
+    max_articles: 5
+    
+  - name: "FlightGlobal"
+    url: "https://www.flightglobal.com/news"
+    article_selector: "div.row div.teaser"
+    title_selector: "h3 a"
+    url_selector: "h3 a"
+    date_selector: "time"
+    summary_selector: "div.standfirst"
+    base_url: "https://www.flightglobal.com"
+    max_articles: 5
+
+press_sources:
+  - name: "Airbus Press"
+    url: "https://www.airbus.com/en/newsroom/press-releases"
+    article_selector: "div.news-item"
+    title_selector: "h3"
+    url_selector: "a.news-item__link"
+    date_selector: "div.news-item__date"
+    base_url: "https://www.airbus.com"
+    max_articles: 3
+    
+  - name: "Boeing Press"
+    url: "https://boeing.mediaroom.com/news-releases-statements"
+    article_selector: "div.wd_item"
+    title_selector: "div.wd_title a"
+    url_selector: "div.wd_title a"
+    date_selector: "div.wd_date"
+    base_url: ""
+    max_articles: 3
+
+# Entités spécifiques au secteur aéronautique
+entities:
+  airlines:
+    - "Air France"
+    - "Lufthansa"
+    - "British Airways"
+    - "Delta Air Lines"
+    - "Emirates"
+    - "Qatar Airways"
+    - "Singapore Airlines"
+    - "American Airlines"
+    - "United Airlines"
+    
+  manufacturers:
+    - "Airbus"
+    - "Boeing"
+    - "Embraer"
+    - "Bombardier"
+    - "Dassault Aviation"
+    - "Gulfstream"
+    - "ATR"
+    - "Textron Aviation"
+    
+  aircraft_models:
+    - "A320"
+    - "A350"
+    - "737 MAX"
+    - "787 Dreamliner"
+    - "777X"
+    - "E2"
+    - "Global 7500"
+    - "Falcon 10X"
+    - "G700"
+    
+  mro_terms:
+    - "maintenance"
+    - "repair"
+    - "overhaul"
+    - "MRO"
+    - "service center"
+    - "component"
+    - "spare parts"
+    - "retrofit"
+    - "upgrade"
+    - "modification"
